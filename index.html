@@ -1,1 +1,36 @@
-<!-- Shayari main page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Islamic World - Ruhani Duayein</title>
+
+  <!-- Tailwind for fallback if CSS fails -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Your CSS and JS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>🕌 Islamic World</h1>
+    <p>Ruhani Duayein, Shayari, Karbala ka Paighaam</p>
+    <p>— by Zeenat</p>
+  </header>
+
+  <main style="text-align:center; padding:3rem;">
+    <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">🤲 Your Daily Dua</h2>
+    <div id="generated-dua" style="margin-bottom: 1.5rem; font-size: 1.2rem;">
+      Click the button below to get a dua
+    </div>
+    <button onclick="generateDua()">Generate Dua</button>
+  </main>
+
+  <footer>
+    <p><a href="share.html">📤 Create your own link</a></p>
+  </footer>
+
+</body>
+</html>
