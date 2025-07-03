@@ -1,1 +1,54 @@
-<!-- Muhammad ﷺ shayari -->
+<!-- islamic-world/shayari/muhammad.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad ﷺ Shayari - Islamic World</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('/assets/img/madina-night.gif') center/cover no-repeat fixed;
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen backdrop-blur-sm">
+
+  <header class="bg-black bg-opacity-70 p-4 text-center shadow">
+    <h1 class="text-3xl font-bold text-green-400">🕋 Muhammad ﷺ Shayari</h1>
+    <p class="text-gray-300">Praises upon the most beloved, mercy to mankind.</p>
+  </header>
+
+  <main class="p-6 space-y-6 max-w-3xl mx-auto bg-black bg-opacity-60 rounded-xl mt-4">
+    <div class="border-l-4 border-green-500 pl-4">
+      <p class="text-lg italic">"Tere siwa kis ke liye uṭhta hai dil ka jazba,<br>Naam-e-Muhammad ﷺ hi toh hai rooh ka nasha."</p>
+    </div>
+    <div class="border-l-4 border-green-500 pl-4">
+      <p class="text-lg italic">"Phir se ek naat ho jaye uss mehboob-e-Khuda ki,<br>Jinka har zikr ibadat hai, har baat duaa ki."</p>
+    </div>
+    <div class="border-l-4 border-green-500 pl-4">
+      <p class="text-lg italic">"Jinki rehmaton se jag ujjala ho gaya,<br>Wohi hain Muhammad ﷺ, jinka har kalam faza ho gaya."</p>
+    </div>
+  </main>
+
+  <div class="fixed top-4 right-4 z-50">
+    <button onclick="toggleMusic()" class="bg-green-700 hover:bg-green-800 px-4 py-2 rounded shadow">🎵 Toggle Naat</button>
+  </div>
+
+  <footer class="text-center p-4 bg-black bg-opacity-70 mt-10">
+    <a href="/shayari/index.html" class="text-green-300 underline">← Back to Shayari</a>
+  </footer>
+
+  <audio id="bg-music" loop autoplay hidden>
+    <source src="/assets/audio/muhammad-naat.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script>
+    function toggleMusic() {
+      const audio = document.getElementById("bg-music");
+      audio.paused ? audio.play() : audio.pause();
+    }
+  </script>
+
+</body>
+</html>
